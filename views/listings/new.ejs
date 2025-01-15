@@ -1,0 +1,51 @@
+<% layout("/layouts/boilerplate") -%>
+<!--Margin-bottom, in bootstrap is written as mb-3-->
+<!-- Offset = 2, is basically shiftinng the voerall thing into left-->
+<body>
+    <div class="row">
+    <div class="col-8 offset-2">
+    <form method="POST" action="/listings">
+        <br>
+        <br>
+        <h3>New Listing</h3>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" placeholder="Add a catchy title" class="form-control" >
+        </div>
+       
+        <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea type="text" name="description" placeholder="Give a description"  class="form-control" row="3"></textarea> 
+        </div>
+
+
+        <div class="mb-3">
+        <label for="image-url" class="form-label">Image Url</label>
+        <input type="text" name="image" placeholder="Add image url" class="form-control" >
+        </div>
+
+    <div class="row">
+        
+        <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" name="price" placeholder="Add the price value" class="form-control" >
+        </div>
+     
+        <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" name="country" placeholder="Country Name" class="form-control" >
+        </div>
+     </div>
+        
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="location" placeholder="Where is it nearby" class="form-control" >
+            </div>
+            <br>
+        <button class="btn btn-dark btn-add">Add</button>
+        <br>
+        <br>
+    </form>
+    
+</div>
+</div>
